@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSC Web Portal</title>
+    <style>
+        body {
+            font-family: Arial;
+            line-height: 1.6;
+            margin: 20px;
+            
+        }
+        h1 {
+            margin-top: 60px;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            background: #f2f2f2;
+            width: 100%;
+            padding: 10px;
+        }
+
+        nav a {
+            margin-right: 25px;
+            text-decoration: none;
+        }
+
+        section {
+            padding-top: 60px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        .highlight {
+            background-color: #d7ffd9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#internet">Internet vs Ethernet</a>
+        <a href="#virtualization">Virtualization</a>
+        <a href="#win10">Install Windows 10</a>
+        <a href="#ubuntu">Install Ubuntu</a>
+        <a href="#tools">Ubuntu Tools (Lab 4)</a>
+        <a href="#lab5">Lab 5</a>
+        <a href="#concurrency">Concurrency</a>
+    </nav>
+
+    <h1>CSC Web Portal</h1>
+
+    <section id="internet">
+        <h2>Internet vs Ethernet</h2>
+        <p><strong>Internet:</strong> A global network that connects millions of devices worldwide using TCP/IP
+            protocols.</p>
+        <p><strong>Ethernet:</strong> A local area network (LAN) technology used to connect devices in close proximity
+            with wired connections.</p>
+        <p><strong>Key Differences:</strong></p>
+        <ul>
+            <li>Internet: Global, public, usually wireless</li>
+            <li>Ethernet: Local, private, wired, faster and more stable</li>
+        </ul>
+    </section>
+
+    <section id="virtualization">
+        <h2>Virtualization</h2>
+        <p>Virtualization allows running multiple operating systems on a single physical machine using virtual machines
+            (VMs).</p>
+        <p><strong>Types:</strong></p>
+        <ul>
+            <li>Full virtualization</li>
+            <li>Paravirtualization</li>
+            <li>OS-level virtualization</li>
+        </ul>
+        <p><strong>Benefits:</strong> Cost savings, test environments, isolation, efficient resource usage.</p>
+    </section>
+
+    <section id="win10">
+        <h2>Installing Windows 10 on Oracle VirtualBox</h2>
+        <ol>
+            <li>Download VirtualBox and Windows 10 ISO.</li>
+            <li>Create a new VM in VirtualBox.</li>
+            <li>Assign memory and storage.</li>
+            <li>Attach Windows ISO to virtual optical drive.</li>
+            <li>Start VM and follow Windows installer.</li>
+        </ol>
+    </section>
+
+    <section id="ubuntu">
+        <h2>Installing Ubuntu on Oracle VirtualBox</h2>
+        <ol>
+            <li>Download Ubuntu ISO.</li>
+            <li>Open VirtualBox → New → "Ubuntu".</li>
+            <li>Set memory (2GB+), disk (25GB+), and boot with Ubuntu ISO.</li>
+            <li>Install Ubuntu by following GUI steps.</li>
+            <li>Install Guest Additions (for screen resize, clipboard):</li>
+        </ol>
+        <pre>sudo apt update
+sudo apt install build-essential dkms linux-headers-$(uname -r)</pre>
+    </section>
+
+    <section id="tools">
+        <h2>Ubuntu Diagnostic Tools (Lab 4)</h2>
+        <p><strong class="highlight">Hardware:</strong> lshw, lscpu, lsblk, lspci, lsusb, hwinfo, dmidecode</p>
+        <p><strong class="highlight">Performance:</strong> top, htop, glances, vmstat, iotop</p>
+        <p><strong class="highlight">Network:</strong> ping, traceroute, iftop, nethogs, ip, nmcli</p>
+        <p><strong class="highlight">Logs:</strong> journalctl, dmesg, /var/log</p>
+        <p><strong class="highlight">Filesystem:</strong> df, du, fsck, badblocks</p>
+        <p><strong class="highlight">Boot/Service:</strong> systemctl, update-grub, systemd-analyze</p>
+    </section>
+
+    <section id="lab5">
+        <h2>Lab 5 – Web and File Servers on Ubuntu</h2>
+        <h3>🖥 Web Server (Apache)</h3>
+        <pre>sudo apt update
+sudo apt install apache2 -y
+sudo systemctl enable apache2
+sudo systemctl start apache2</pre>
+
+        <h3>📁 File Sharing with Samba</h3>
+        <pre>sudo apt install samba -y
+sudo mkdir -p /srv/samba/shared
+sudo chmod 2775 /srv/samba/shared
+sudo chown nobody:nogroup /srv/samba/shared
+
+# Add to /etc/samba/smb.conf
+[SharedFiles]
+   path = /srv/samba/shared
+   browseable = yes
+   read only = no
+   guest ok = yes
+
+sudo systemctl restart smbd
+sudo ufw allow 'Samba'</pre>
+
+        <h3>📁 File Sharing with NFS</h3>
+        <pre>sudo apt install nfs-kernel-server -y
+sudo mkdir -p /srv/nfs/shared
+sudo chown nobody:nogroup /srv/nfs/shared
+
+# Add to /etc/exports
+/srv/nfs/shared 192.168.1.0/24(rw,sync,no_subtree_check)
+
+sudo exportfs -a
+sudo systemctl restart nfs-kernel-server
+sudo ufw allow from 192.168.1.0/24 to any port nfs</pre>
+    </section>
+
+    <section id="concurrency">
+        <h2>Concurrency</h2>
+        <p>Concurrency is the ability of an operating system to handle multiple tasks at once. It is a key concept in
+            process scheduling and multitasking.</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+            <li>Running multiple browser tabs</li>
+            <li>Background software updates</li>
+            <li>Multi-threaded server applications</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
