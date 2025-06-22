@@ -50,7 +50,7 @@
 <body>
 
     <nav>
-        <a href="#internet">Internet vs Ethernet</a>
+        <a href="os system tools">os system tools</a>
         <a href="#virtualization">Virtualization</a>
         <a href="#win10">Install Windows 10</a>
         <a href="#ubuntu">Install Ubuntu</a>
@@ -60,66 +60,21 @@
     </nav>
 
     <h1>CSC Web Portal</h1>
-
-    <section id="internet">
+<section id="os system tools">
         <body>
-            <h2>Internet vs Ethernet</h2>
-        
-            <div style="display: flex; font-weight: bold; margin-bottom: 10px;">
-                <div style="width: 25%;">Feature</div>
-                <div style="width: 35%;">Internet</div>
-                <div style="width: 35%;">Ethernet</div>
-            </div>
-            <div style="display: flex; margin-bottom: 8px;">
-                <div style="width: 25%;">Definition</div>
-                <div style="width: 35%;">A global network of interconnected computers and servers that use TCP/IP.</div>
-                <div style="width: 35%;">A wired LAN technology for connecting devices in a local area.</div>
-            </div>
-        
-            <div style="display: flex; margin-bottom: 8px;">
-                <div style="width: 25%;">Scope</div>
-                <div style="width: 35%;">Worldwide (WAN)</div>
-                <div style="width: 35%;">Local (LAN)</div>
-            </div>
-        
-            <div style="display: flex; margin-bottom: 8px;">
-                <div style="width: 25%;">Connection Type</div>
-                <div style="width: 35%;">Wireless or wired</div>
-                <div style="width: 35%;">Wired (Ethernet cables)</div>
-            </div>
-        
-            <div style="display: flex; margin-bottom: 8px;">
-                <div style="width: 25%;">Purpose</div>
-                <div style="width: 35%;">Access services like web, email, cloud apps</div>
-                <div style="width: 35%;">Connect local devices for sharing resources</div>
-            </div>
-        
-            <div style="display: flex; margin-bottom: 8px;">
-                <div style="width: 25%;">Protocols</div>
-                <div style="width: 35%;">TCP/IP, HTTP, HTTPS, etc.</div>
-                <div style="width: 35%;">Ethernet (IEEE 802.3)</div>
-            </div>
-        
-            <div style="display: flex; margin-bottom: 8px;">
-                <div style="width: 25%;">Speed</div>
-                <div style="width: 35%;">Varies (5 Mbps to 1 Gbps or more)</div>
-                <div style="width: 35%;">Typically 1 Gbps to 10+ Gbps</div>
-            </div>
-        
-            <div style="display: flex; margin-bottom: 8px;">
-                <div style="width: 25%;">Example</div>
-                <div style="width: 35%;">Browsing Google, streaming Netflix</div>
-                <div style="width: 35%;">Connecting PC to router with Ethernet cable</div>
-            </div>
-        
-            <hr style="margin: 40px 0;">
-        
-            <h3>Key Differences:</h3>
-            <ul>
-                <li>Internet is a global network; Ethernet is a local connection technology.</li>
-                <li>Ethernet connects devices within a LAN; Internet connects networks globally.</li>
-                <li>Ethernet can be part of an internet setup (e.g., router to PC), but they serve different roles.</li>
-            </ul>
+            <h2>Lab 1: Operating System Tools And Utilities</h2>
+            <h1>Task Manager</h1>
+            <li>Processes Tab: Shows running applications and background processes.</li>
+            <li>Performance Tab: Displays CPU, memory, disk, and network usage.</li>
+            <li>App History Tab: shows resource usage history for applications.</li>
+            <li>Startup Tab: Manages programs that run at startup.</li>
+            <li>Details Tab: Provides detailed information abouy running processes.</li>
+
+        <h1>Device Manger</h1>
+        <li>Device Categories: Displays devices by category.</li>
+        <li>Device Properties: Shows device status, driver details, and resource settings.</li>
+        <li>Device Management: Allows updating, rolling back, or uninstalling drivers.</li>
+        <li>Devices Troubleshooting: Helps identify and resolve hardware issues.</li>    
         </body>
     </section>
 
