@@ -1,0 +1,44 @@
+<body>
+    
+    <h2>Internet vs Ethernet</h2>
+    
+    <h3>Feature</h3>
+    <ul class="feature-list">
+        <li><span class="highlight">Definition</span></li>
+        <li><span class="highlight">Scope</span></li>
+        <li><span class="highlight">Connection Type</span></li>
+        <li><span class="highlight">Purpose</span></li>
+        <li><span class="highlight">Protocols</span></li>
+        <li><span class="highlight">Speed</span></li>
+        <li><span class="highlight">Example</span></li>
+    </ul>
+
+    <p>A global network of interconnected computers and servers that communicate using standardized protocols (e.g., TCP/IP).</p>
+    <p>Worldwide (WAN).</p>
+    <p>Can be wireless (Wi-Fi, cellular) or wired (Dial, Ethernet).</p>
+    <p>Enables access to services like websites, emails, and cloud apps.</p>
+    <p>Various (e.g., 5 Mbps to 1 Gbps).</p>
+    <p>Varies (e.g., 5 Mbps to 1 Gbps).</p>
+    <p>Browsing Google, streaming Netflix.</p>
+
+    <div class="divider"></div>
+
+    <h3>Key Difference:</h3>
+    <ul>
+        <li>Internet is the global network you use to access online services.</li>
+        <li>Ethernet is a local wired technology to connect devices or link to the internet.</li>
+        <li>Ethernet can be part of your internet setup (e.g., connecting a modem to a router), but they serve different purposes.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h3>Ethernet</h3>
+    <p>A wired Local Area Network (LAN) technology used to connect devices within a small geographical area (e.g., home, office).</p>
+    <p>Local (LAN).</p>
+    <p>Primarily wired (uses cables like Cat5/Cat6).</p>
+    <p>Connects devices (e.g., PCs, printers) within a local network for resource sharing.</p>
+    <p>Various (e.g., 3 Ethernet standards).</p>
+    <p>Typically 1 Gbps (modern Ethernet), up to 10 Gbps or more.</p>
+    <p>Connecting your PC to a router via cable for stable internet.</p>
+</body>
+</html>
