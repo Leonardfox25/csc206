@@ -1,0 +1,41 @@
+<body>
+  <h2>🔹 Synopsis: Concurrency</h2>
+
+  <p><strong>Concurrency</strong> refers to the ability of a system to perform multiple tasks or processes simultaneously or in overlapping time periods. It allows efficient execution of independent computations and better resource utilization in software and systems.</p>
+
+  <h3>🔸 Types of Concurrency:</h3>
+  <ul>
+    <li><strong>Multithreading</strong> – Multiple threads execute within a single process, sharing memory.</li>
+    <li><strong>Multiprocessing</strong> – Multiple processes run in parallel, each with its own memory space.</li>
+    <li><strong>Asynchronous Programming</strong> – Tasks are initiated and managed without blocking the main thread.</li>
+    <li><strong>Distributed Concurrency</strong> – Tasks run concurrently across multiple networked machines.</li>
+  </ul>
+
+  <h3>🔸 Key Concepts:</h3>
+  <ul>
+    <li><strong>Thread</strong> – The smallest unit of execution in a process.</li>
+    <li><strong>Race Condition</strong> – A bug that occurs when multiple threads access shared data concurrently.</li>
+    <li><strong>Deadlock</strong> – A situation where two or more threads are waiting for each other to release resources.</li>
+    <li><strong>Synchronization</strong> – Mechanisms to control the access of multiple threads to shared resources.</li>
+  </ul>
+
+  <h3>🔸 Benefits:</h3>
+  <ul>
+    <li>Improved system responsiveness</li>
+    <li>Efficient CPU utilization</li>
+    <li>Faster completion of multiple tasks</li>
+    <li>Better user experience in interactive systems</li>
+  </ul>
+
+  <h3>🔸 Applications:</h3>
+  <ul>
+    <li>Operating systems and kernels</li>
+    <li>Real-time systems</li>
+    <li>Web servers and browsers</li>
+    <li>Parallel computing in scientific simulations</li>
+    <li>Concurrent data processing (e.g., databases, message queues)</li>
+  </ul>
+
+  <h3>🔸 Conclusion:</h3>
+  <p>Concurrency is vital in modern computing for achieving high performance, scalability, and efficient use of system resources. It requires careful design to avoid common pitfalls like race conditions and deadlocks.</p>
+</body>
