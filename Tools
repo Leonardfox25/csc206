@@ -1,0 +1,48 @@
+<body>
+  <h1>Linux System Tools in Ubuntu on Oracle VirtualBox</h1>
+
+  <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Valid Ubuntu Tool</th>
+        <th>Description</th>
+        <th>Works Meaningfully in VirtualBox?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>lshw</td><td>Yes</td><td>Lists detailed hardware info (CPU, RAM, disk, etc.)</td><td>Yes, but shows virtual hardware</td></tr>
+      <tr><td>ls</td><td>Yes (core tool)</td><td>Lists files and directories</td><td>Fully functional</td></tr>
+      <tr><td>lscpu</td><td>Yes</td><td>Displays CPU architecture info</td><td>Shows virtual CPU settings</td></tr>
+      <tr><td>lsblk</td><td>Yes</td><td>Lists block devices (disks, partitions)</td><td>Shows virtual disks</td></tr>
+      <tr><td>hwinfo</td><td>Yes (install via apt)</td><td>Very detailed hardware probe</td><td>Yes, but reports virtual hardware</td></tr>
+      <tr><td>dmidecode</td><td>Yes</td><td>Dumps BIOS/DMI info like serial number, model, RAM slots</td><td>Works, but shows VirtualBox defaults</td></tr>
+      <tr><td>memtest86+</td><td>Yes (via apt)</td><td>RAM testing tool from GRUB (runs outside OS)</td><td>Not meaningful in VM</td></tr>
+      <tr><td>glances</td><td>Yes (via apt or pip)</td><td>Real-time system monitor (CPU, RAM, disk, etc.)</td><td>Fully functional</td></tr>
+      <tr><td>1shw</td><td>No</td><td>Not a real command; likely a typo for lshw</td><td>Invalid</td></tr>
+      <tr><td>demidecode</td><td>No</td><td>Not a valid command; likely a typo for dmidecode</td><td>Invalid</td></tr>
+
+      <tr><td>top</td><td>Yes</td><td>Real-time process, CPU, memory monitor</td><td>Fully functional</td></tr>
+      <tr><td>htop</td><td>Yes (via apt)</td><td>Enhanced version of top with a colorful UI</td><td>Fully functional</td></tr>
+      <tr><td>free</td><td>Yes</td><td>Displays memory usage (RAM and swap)</td><td>Fully functional</td></tr>
+      <tr><td>uptime</td><td>Yes</td><td>Shows how long the system has been running</td><td>Fully functional</td></tr>
+      <tr><td>df</td><td>Yes</td><td>Reports disk space usage of mounted filesystems</td><td>Fully functional</td></tr>
+      <tr><td>du</td><td>Yes</td><td>Shows disk usage of files and directories</td><td>Fully functional</td></tr>
+      <tr><td>inxi</td><td>Yes (via apt)</td><td>System info summary tool (CPU, GPU, RAM, etc.)</td><td>Shows virtualized hardware</td></tr>
+      <tr><td>neofetch</td><td>Yes (via apt)</td><td>ASCII-style system info summary</td><td>Fully functional</td></tr>
+      <tr><td>screenfetch</td><td>Yes (via apt)</td><td>Alternative to neofetch</td><td>Fully functional</td></tr>
+      <tr><td>uname -a</td><td>Yes</td><td>Shows kernel version, architecture</td><td>Fully functional</td></tr>
+      <tr><td>cat /proc/cpuinfo</td><td>Yes</td><td>Displays CPU details</td><td>Shows virtual CPU info</td></tr>
+      <tr><td>cat /proc/meminfo</td><td>Yes</td><td>Displays memory stats</td><td>Fully functional</td></tr>
+      <tr><td>lsusb</td><td>Yes</td><td>Lists USB devices</td><td>Only shows passed-through devices</td></tr>
+      <tr><td>lspci</td><td>Yes</td><td>Lists PCI devices</td><td>Shows virtual PCI devices</td></tr>
+      <tr><td>sensors</td><td>Yes (via lm-sensors)</td><td>Shows temperatures, fan speeds</td><td>Often doesn’t work in VMs</td></tr>
+      <tr><td>iostat</td><td>Yes (via sysstat)</td><td>Displays CPU and disk I/O stats</td><td>Fully functional</td></tr>
+      <tr><td>vmstat</td><td>Yes</td><td>Reports memory, CPU, process, and I/O stats</td><td>Fully functional</td></tr>
+      <tr><td>dstat</td><td>Yes (via apt)</td><td>Combines vmstat, iostat, netstat</td><td>Fully functional</td></tr>
+      <tr><td>iotop</td><td>Yes (via apt)</td><td>Real-time I/O usage per process</td><td>Fully functional</td></tr>
+      <tr><td>ps</td><td>Yes</td><td>Lists running processes</td><td>Fully functional</td></tr>
+      <tr><td>whoami</td><td>Yes</td><td>Displays current user</td><td>Fully functional</td></tr>
+    </tbody>
+  </table>
+</body>
