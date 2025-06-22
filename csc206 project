@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSC206 Project</title>
+    <style>
+        body {
+            font-family: Arial;
+            line-height: 1.6;
+            margin: 20px;
+            
+        }
+        h1 {
+            margin-top: 60px;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            background: #f2f2f2;
+            width: 100%;
+            padding: 10px;
+        }
+
+        nav a {
+            margin-right: 25px;
+            text-decoration: none;
+        }
+
+        section {
+            padding-top: 60px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        .highlight {
+            background-color: #d7ffd9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#internet">Internet vs Ethernet</a>
+        <a href="#virtualization">Virtualization</a>
+        <a href="#win10">Install Windows 10</a>
+        <a href="#ubuntu">Install Ubuntu</a>
+        <a href="#Linux System Tools in Ubuntu on Oracle VirtualBox">Ubuntu Tools (Lab 4)</a>
+        <a href="#lab5">Lab 5</a>
+        <a href="#concurrency">Concurrency</a>
+    </nav>
+
+    <h1>CSC Web Portal</h1>
+
+    <section id="internet">
+        <body>
+            <h2>Internet vs Ethernet</h2>
+        
+            <div style="display: flex; font-weight: bold; margin-bottom: 10px;">
+                <div style="width: 25%;">Feature</div>
+                <div style="width: 35%;">Internet</div>
+                <div style="width: 35%;">Ethernet</div>
+            </div>
+            <div style="display: flex; margin-bottom: 8px;">
+                <div style="width: 25%;">Definition</div>
+                <div style="width: 35%;">A global network of interconnected computers and servers that use TCP/IP.</div>
+                <div style="width: 35%;">A wired LAN technology for connecting devices in a local area.</div>
+            </div>
+        
+            <div style="display: flex; margin-bottom: 8px;">
+                <div style="width: 25%;">Scope</div>
+                <div style="width: 35%;">Worldwide (WAN)</div>
+                <div style="width: 35%;">Local (LAN)</div>
+            </div>
+        
+            <div style="display: flex; margin-bottom: 8px;">
+                <div style="width: 25%;">Connection Type</div>
+                <div style="width: 35%;">Wireless or wired</div>
+                <div style="width: 35%;">Wired (Ethernet cables)</div>
+            </div>
+        
+            <div style="display: flex; margin-bottom: 8px;">
+                <div style="width: 25%;">Purpose</div>
+                <div style="width: 35%;">Access services like web, email, cloud apps</div>
+                <div style="width: 35%;">Connect local devices for sharing resources</div>
+            </div>
+        
+            <div style="display: flex; margin-bottom: 8px;">
+                <div style="width: 25%;">Protocols</div>
+                <div style="width: 35%;">TCP/IP, HTTP, HTTPS, etc.</div>
+                <div style="width: 35%;">Ethernet (IEEE 802.3)</div>
+            </div>
+        
+            <div style="display: flex; margin-bottom: 8px;">
+                <div style="width: 25%;">Speed</div>
+                <div style="width: 35%;">Varies (5 Mbps to 1 Gbps or more)</div>
+                <div style="width: 35%;">Typically 1 Gbps to 10+ Gbps</div>
+            </div>
+        
+            <div style="display: flex; margin-bottom: 8px;">
+                <div style="width: 25%;">Example</div>
+                <div style="width: 35%;">Browsing Google, streaming Netflix</div>
+                <div style="width: 35%;">Connecting PC to router with Ethernet cable</div>
+            </div>
+        
+            <hr style="margin: 40px 0;">
+        
+            <h3>Key Differences:</h3>
+            <ul>
+                <li>Internet is a global network; Ethernet is a local connection technology.</li>
+                <li>Ethernet connects devices within a LAN; Internet connects networks globally.</li>
+                <li>Ethernet can be part of an internet setup (e.g., router to PC), but they serve different roles.</li>
+            </ul>
+        </body>
+    </section>
+
+    <section id="virtualization">
+        <body>
+            <h2>Virtualization</h2>
+        
+            <p><strong>Virtualization</strong> is a technology that allows multiple simulated environments or dedicated
+                resources to run on one physical hardware system. This is achieved using a software layer called a
+                <strong>hypervisor</strong>, which manages and isolates <strong>virtual machines (VMs)</strong> or containers.
+            </p>
+        
+            <h3>Types of Virtualization:</h3>
+            <ul>
+                <li><strong>Hardware Virtualization</strong> – Running multiple VMs on one server.</li>
+                <li><strong>Operating System Virtualization</strong> – Using containers like Docker.</li>
+                <li><strong>Application Virtualization</strong> – Running apps in isolated environments.</li>
+                <li><strong>Desktop Virtualization</strong> – Accessing desktops remotely (e.g., VDI).</li>
+                <li><strong>Storage Virtualization</strong> – Combining multiple storage devices into one.</li>
+                <li><strong>Network Virtualization</strong> – Creating virtual networks over physical ones.</li>
+            </ul>
+        
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Cost savings</li>
+                <li>Efficient resource utilization</li>
+                <li>Scalable and flexible infrastructure</li>
+                <li>Easier disaster recovery</li>
+                <li>Safer testing environments</li>
+                <li>Enhanced portability and security</li>
+            </ul>
+        
+            <h3>Applications:</h3>
+            <ul>
+                <li>Cloud services (AWS, Azure)</li>
+                <li>Enterprise IT infrastructure</li>
+                <li>Cybersecurity testing</li>
+                <li>Software development and education</li>
+            </ul>
+        </body>
+    </section>
+
+    <section id="win10">
+        <h2>Installing Windows 10 on Oracle VirtualBox</h2>
+        <body>
+            <h1>Step-by-Step Installation Guides</h1>
+            <ol>
+                <li>Download Required files
+                    - Oracle Virtual box
+                    - windows 10 ISO
+                </li>
+                <li>Install Virtual Box - run the installer and follow on-screen instructions to install it</li>
+                <li>Open VirtualBox → Click <strong>New</strong></li>
+                <li>Name: <code>Windows 10</code>, Type: <code>Microsoft Windows</code>, Version:
+                    <code>Windows 10 (64-bit)</code></li>
+                <li>Assign at least <strong>2048 MB</strong> of RAM</li>
+                <li>Create a virtual hard disk now → Choose <strong>VDI</strong> → <strong>Dynamically allocated</strong></li>
+                <li>Set disk size to <strong>50 GB or more</strong></li>
+                <li>Go to <strong>Settings → Storage</strong> → Mount the Windows 10 ISO under the empty optical drive</li>
+                <li>Start the VM → Windows setup will launch</li>
+                <li>Select language, edition, and install using <strong>Custom</strong> option</li>
+                <li>Install on the unallocated space → Wait for installation to complete</li>
+                <li>Set up username, password, and privacy settings after restart</li>
+            </ol>
+        </body>
+    </section>
+
+    <section id="ubuntu">
+        <h2>Installing Ubuntu on Oracle VirtualBox</h2>
+        <h1>Step-by-Step Installation Guides</h1>
+        <ol>
+            <li>Download Required Files - virtual box and linux ISO</li>
+            <li>Install VirtualBox</li>
+            <li>Open VirtualBox → Click <strong>New</strong></li>
+            <li>Name: <code>Ubuntu</code>, Type: <code>Linux</code>, Version: <code>Ubuntu (64-bit)</code></li>
+            <li>Assign at least <strong>2048 MB</strong> of RAM (4096 MB recommended)</li>
+            <li>Create a virtual hard disk now → Choose <strong>VDI</strong> → <strong>Dynamically allocated</strong></li>
+            <li>Set disk size to <strong>25 GB or more</strong></li>
+            <li>Go to <strong>Settings → Storage</strong> → Mount the Ubuntu ISO under the empty optical drive</li>
+            <li>Start the VM → Ubuntu setup will launch</li>
+            <li>Choose <strong>Install Ubuntu</strong> → Keyboard, updates, and minimal/normal setup</li>
+            <li>Select <strong>Erase disk and install Ubuntu</strong> (safe for VM)</li>
+            <li>Set timezone, username, and password → Click <strong>Install</strong></li>
+            <li>Restart when prompted and log into Ubuntu</li>
+        </ol>
+    </section>
+
+    <section id="Linux System Tools in Ubuntu on Oracle VirtualBox">
+        <h2>Ubuntu Diagnostic Tools (Lab 4)</h2>
+        <p><strong class="highlight">Hardware:</strong> lshw, lscpu, lsblk, lspci, lsusb, hwinfo, dmidecode</p>
+        <p><strong class="highlight">Performance:</strong> top, htop, glances, vmstat, iotop</p>
+        <p><strong class="highlight">Network:</strong> ping, traceroute, iftop, nethogs, ip, nmcli</p>
+        <p><strong class="highlight">Logs:</strong> journalctl, dmesg, /var/log</p>
+        <p><strong class="highlight">Filesystem:</strong> df, du, fsck, badblocks</p>
+        <p><strong class="highlight">Boot/Service:</strong> systemctl, update-grub, systemd-analyze</p>
+    <body>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Valid Ubuntu Tool</th>
+        <th>Description</th>
+        <th>A valid and functioning comand on ubuntu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>lshw</td><td>Yes</td><td>Lists detailed hardware info (CPU, RAM, disk, etc.)</td><td>Yes, but shows virtual hardware</td></tr>
+      <tr><td>ls</td><td>Yes (core tool)</td><td>Lists files and directories</td><td>Fully functional</td></tr>
+      <tr><td>lscpu</td><td>Yes</td><td>Displays CPU architecture info</td><td>Shows virtual CPU settings</td></tr>
+      <tr><td>lsblk</td><td>Yes</td><td>Lists block devices (disks, partitions)</td><td>Shows virtual disks</td></tr>
+      <tr><td>hwinfo</td><td>Yes (install via apt)</td><td>Very detailed hardware probe</td><td>Yes, but reports virtual hardware</td></tr>
+      <tr><td>dmidecode</td><td>Yes</td><td>Dumps BIOS/DMI info like serial number, model, RAM slots</td><td>Works, but shows VirtualBox defaults</td></tr>
+      <tr><td>memtest86+</td><td>Yes (via apt)</td><td>RAM testing tool from GRUB (runs outside OS)</td><td>Not meaningful in VM</td></tr>
+      <tr><td>glances</td><td>Yes (via apt or pip)</td><td>Real-time system monitor (CPU, RAM, disk, etc.)</td><td>Fully functional</td></tr>
+      <tr><td>1shw</td><td>No</td><td>Not a real command; likely a typo for lshw</td><td>Invalid</td></tr>
+      <tr><td>demidecode</td><td>No</td><td>Not a valid command; likely a typo for dmidecode</td><td>Invalid</td></tr>
+
+      <tr><td>top</td><td>Yes</td><td>Real-time process, CPU, memory monitor</td><td>Fully functional</td></tr>
+      <tr><td>htop</td><td>Yes (via apt)</td><td>Enhanced version of top with a colorful UI</td><td>Fully functional</td></tr>
+      <tr><td>free</td><td>Yes</td><td>Displays memory usage (RAM and swap)</td><td>Fully functional</td></tr>
+      <tr><td>uptime</td><td>Yes</td><td>Shows how long the system has been running</td><td>Fully functional</td></tr>
+      <tr><td>df</td><td>Yes</td><td>Reports disk space usage of mounted filesystems</td><td>Fully functional</td></tr>
+      <tr><td>du</td><td>Yes</td><td>Shows disk usage of files and directories</td><td>Fully functional</td></tr>
+      <tr><td>inxi</td><td>Yes (via apt)</td><td>System info summary tool (CPU, GPU, RAM, etc.)</td><td>Shows virtualized hardware</td></tr>
+      <tr><td>neofetch</td><td>Yes (via apt)</td><td>ASCII-style system info summary</td><td>Fully functional</td></tr>
+      <tr><td>screenfetch</td><td>Yes (via apt)</td><td>Alternative to neofetch</td><td>Fully functional</td></tr>
+      <tr><td>uname -a</td><td>Yes</td><td>Shows kernel version, architecture</td><td>Fully functional</td></tr>
+      <tr><td>cat /proc/cpuinfo</td><td>Yes</td><td>Displays CPU details</td><td>Shows virtual CPU info</td></tr>
+      <tr><td>cat /proc/meminfo</td><td>Yes</td><td>Displays memory stats</td><td>Fully functional</td></tr>
+      <tr><td>lsusb</td><td>Yes</td><td>Lists USB devices</td><td>Only shows passed-through devices</td></tr>
+      <tr><td>lspci</td><td>Yes</td><td>Lists PCI devices</td><td>Shows virtual PCI devices</td></tr>
+      <tr><td>sensors</td><td>Yes (via lm-sensors)</td><td>Shows temperatures, fan speeds</td><td>Often doesn’t work in VMs</td></tr>
+      <tr><td>iostat</td><td>Yes (via sysstat)</td><td>Displays CPU and disk I/O stats</td><td>Fully functional</td></tr>
+      <tr><td>vmstat</td><td>Yes</td><td>Reports memory, CPU, process, and I/O stats</td><td>Fully functional</td></tr>
+      <tr><td>dstat</td><td>Yes (via apt)</td><td>Combines vmstat, iostat, netstat</td><td>Fully functional</td></tr>
+      <tr><td>iotop</td><td>Yes (via apt)</td><td>Real-time I/O usage per process</td><td>Fully functional</td></tr>
+      <tr><td>ps</td><td>Yes</td><td>Lists running processes</td><td>Fully functional</td></tr>
+      <tr><td>whoami</td><td>Yes</td><td>Displays current user</td><td>Fully functional</td></tr>
+    </tbody>
+  </table>
+</body>
+    </section>
+
+    <section id="lab5">
+        <h2>Lab 5 'Web and File Servers on Ubuntu'</h2>
+        <h3>Web Server (Apache)</h3>
+        <pre>sudo apt update
+sudo apt install apache2 -y
+sudo systemctl enable apache2
+sudo systemctl start apache2</pre>
+
+        <h3>File Sharing with Samba</h3>
+        <pre>sudo apt install samba -y
+sudo mkdir -p /srv/samba/shared
+sudo chmod 2775 /srv/samba/shared
+sudo chown nobody:nogroup /srv/samba/shared
+
+# Add to /etc/samba/smb.conf
+[SharedFiles]
+   path = /srv/samba/shared
+   browseable = yes
+   read only = no
+   guest ok = yes
+
+sudo systemctl restart smbd
+sudo ufw allow 'Samba'</pre>
+
+        <h3>File Sharing with NFS</h3>
+        <pre>sudo apt install nfs-kernel-server -y
+sudo mkdir -p /srv/nfs/shared
+sudo chown nobody:nogroup /srv/nfs/shared
+
+# Add to /etc/exports
+/srv/nfs/shared 192.168.1.0/24(rw,sync,no_subtree_check)
+
+sudo exportfs -a
+sudo systemctl restart nfs-kernel-server
+sudo ufw allow from 192.168.1.0/24 to any port nfs</pre>
+    </section>
+
+    <section id="concurrency">
+        <body>
+            <h2>Concurrency</h2>
+        
+            <p><strong>Concurrency</strong> refers to the ability of a system to perform multiple tasks or processes
+                simultaneously or in overlapping time periods. It allows efficient execution of independent computations and
+                better resource utilization in software and systems.</p>
+        
+            <h3>Types of Concurrency:</h3>
+            <ul>
+                <li><strong>Multithreading</strong> – Multiple threads execute within a single process, sharing memory.</li>
+                <li><strong>Multiprocessing</strong> – Multiple processes run in parallel, each with its own memory space.</li>
+                <li><strong>Asynchronous Programming</strong> – Tasks are initiated and managed without blocking the main
+                    thread.</li>
+                <li><strong>Distributed Concurrency</strong> – Tasks run concurrently across multiple networked machines.</li>
+            </ul>
+        
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li><strong>Thread</strong> – The smallest unit of execution in a process.</li>
+                <li><strong>Race Condition</strong> – A bug that occurs when multiple threads access shared data concurrently.
+                </li>
+                <li><strong>Deadlock</strong> – A situation where two or more threads are waiting for each other to release
+                    resources.</li>
+                <li><strong>Synchronization</strong> – Mechanisms to control the access of multiple threads to shared resources.
+                </li>
+            </ul>
+        
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Improved system responsiveness</li>
+                <li>Efficient CPU utilization</li>
+                <li>Faster completion of multiple tasks</li>
+                <li>Better user experience in interactive systems</li>
+            </ul>
+        
+            <h3>Applications:</h3>
+            <ul>
+                <li>Operating systems and kernels</li>
+                <li>Real-time systems</li>
+                <li>Web servers and browsers</li>
+                <li>Parallel computing in scientific simulations</li>
+                <li>Concurrent data processing (e.g., databases, message queues)</li>
+            </ul>
+        </body>
+    </section>
+
+</body>
+
+</html>
