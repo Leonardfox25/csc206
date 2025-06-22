@@ -1,44 +1,68 @@
 <body>
-    
-    <h2>Internet vs Ethernet</h2>
-    
-    <h3>Feature</h3>
-    <ul class="feature-list">
-        <li><span class="highlight">Definition</span></li>
-        <li><span class="highlight">Scope</span></li>
-        <li><span class="highlight">Connection Type</span></li>
-        <li><span class="highlight">Purpose</span></li>
-        <li><span class="highlight">Protocols</span></li>
-        <li><span class="highlight">Speed</span></li>
-        <li><span class="highlight">Example</span></li>
-    </ul>
+  <h1>LAB 11</h1>
+  <h2>Internet vs Ethernet</h2>
 
-    <p>A global network of interconnected computers and servers that communicate using standardized protocols (e.g., TCP/IP).</p>
-    <p>Worldwide (WAN).</p>
-    <p>Can be wireless (Wi-Fi, cellular) or wired (Dial, Ethernet).</p>
-    <p>Enables access to services like websites, emails, and cloud apps.</p>
-    <p>Various (e.g., 5 Mbps to 1 Gbps).</p>
-    <p>Varies (e.g., 5 Mbps to 1 Gbps).</p>
-    <p>Browsing Google, streaming Netflix.</p>
+  <div style="display: flex; font-weight: bold; margin-bottom: 10px;">
+    <div style="width: 25%;">Feature</div>
+    <div style="width: 35%;">Internet</div>
+    <div style="width: 35%;">Ethernet</div>
+  </div>
 
-    <div class="divider"></div>
+  <!-- Row 1 -->
+  <div style="display: flex; margin-bottom: 8px;">
+    <div style="width: 25%;">Definition</div>
+    <div style="width: 35%;">A global network of interconnected computers and servers that use TCP/IP.</div>
+    <div style="width: 35%;">A wired LAN technology for connecting devices in a local area.</div>
+  </div>
 
-    <h3>Key Difference:</h3>
-    <ul>
-        <li>Internet is the global network you use to access online services.</li>
-        <li>Ethernet is a local wired technology to connect devices or link to the internet.</li>
-        <li>Ethernet can be part of your internet setup (e.g., connecting a modem to a router), but they serve different purposes.</li>
-    </ul>
+  <!-- Row 2 -->
+  <div style="display: flex; margin-bottom: 8px;">
+    <div style="width: 25%;">Scope</div>
+    <div style="width: 35%;">Worldwide (WAN)</div>
+    <div style="width: 35%;">Local (LAN)</div>
+  </div>
 
-    <div class="divider"></div>
+  <!-- Row 3 -->
+  <div style="display: flex; margin-bottom: 8px;">
+    <div style="width: 25%;">Connection Type</div>
+    <div style="width: 35%;">Wireless or wired</div>
+    <div style="width: 35%;">Wired (Ethernet cables)</div>
+  </div>
 
-    <h3>Ethernet</h3>
-    <p>A wired Local Area Network (LAN) technology used to connect devices within a small geographical area (e.g., home, office).</p>
-    <p>Local (LAN).</p>
-    <p>Primarily wired (uses cables like Cat5/Cat6).</p>
-    <p>Connects devices (e.g., PCs, printers) within a local network for resource sharing.</p>
-    <p>Various (e.g., 3 Ethernet standards).</p>
-    <p>Typically 1 Gbps (modern Ethernet), up to 10 Gbps or more.</p>
-    <p>Connecting your PC to a router via cable for stable internet.</p>
+  <!-- Row 4 -->
+  <div style="display: flex; margin-bottom: 8px;">
+    <div style="width: 25%;">Purpose</div>
+    <div style="width: 35%;">Access services like web, email, cloud apps</div>
+    <div style="width: 35%;">Connect local devices for sharing resources</div>
+  </div>
+
+  <!-- Row 5 -->
+  <div style="display: flex; margin-bottom: 8px;">
+    <div style="width: 25%;">Protocols</div>
+    <div style="width: 35%;">TCP/IP, HTTP, HTTPS, etc.</div>
+    <div style="width: 35%;">Ethernet (IEEE 802.3)</div>
+  </div>
+
+  <!-- Row 6 -->
+  <div style="display: flex; margin-bottom: 8px;">
+    <div style="width: 25%;">Speed</div>
+    <div style="width: 35%;">Varies (5 Mbps to 1 Gbps or more)</div>
+    <div style="width: 35%;">Typically 1 Gbps to 10+ Gbps</div>
+  </div>
+
+  <!-- Row 7 -->
+  <div style="display: flex; margin-bottom: 8px;">
+    <div style="width: 25%;">Example</div>
+    <div style="width: 35%;">Browsing Google, streaming Netflix</div>
+    <div style="width: 35%;">Connecting PC to router with Ethernet cable</div>
+  </div>
+
+  <hr style="margin: 40px 0;">
+
+  <h3>Key Differences:</h3>
+  <ul>
+    <li>Internet is a global network; Ethernet is a local connection technology.</li>
+    <li>Ethernet connects devices within a LAN; Internet connects networks globally.</li>
+    <li>Ethernet can be part of an internet setup (e.g., router to PC), but they serve different roles.</li>
+  </ul>
 </body>
-</html>
